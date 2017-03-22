@@ -1,0 +1,38 @@
+[
+  {
+    "id": "c_f595_a",
+    "title": "Albo Pretorio del Comune di Montereale",
+    "description": "*non ufficiale* RSS feed dell'Albo Pretorio di Montereale",
+    "administration": "Comune di Montereale",
+    "ipa_code": "c_f595",
+    "istat_code": "66056",
+    "url": "http://www.comune.montereale.it/mc/mc_gridev_messi_datigrid.php?x=&tmphdata=1472542870851&combo1=9999",
+    "feed": "http://feeds.ricostruzionetrasparente.it/albi_pretori/Montereale_feed.xml",
+    "scraper": "https://github.com/ebergam/halley2RSS",
+    "maintainer": "Enrico Bergamini <enrico.bergamini@ondata.it> (http://www.enricobergamini.it/)"
+  },
+  {
+    "id": "c_l597_a",
+    "title": "Albo Pretorio del Comune di Valle Castellana",
+    "description": "*non ufficiale* RSS feed dell'Albo Pretorio di Valle Castellana",
+    "administration": "Comune di Valle Castellana",
+    "ipa_code": "c_l597",
+    "istat_code": "067046",
+    "url": "http://www.halleyweb.com/c067046/mc/mc_gridev_messi_datigrid.php?x=&tmphdata=1472496974183&combo1=9999",
+    "feed": "http://feeds.ricostruzionetrasparente.it/albi_pretori/Valle%20Castellana_feed.xml",
+    "scraper": "https://github.com/ebergam/halley2RSS",
+    "maintainer": "Enrico Bergamini <enrico.bergamini@ondata.it> (http://www.enricobergamini.it/)"
+  },
+  {
+    "id": "c_a019_a",
+    "title": "Albo Pretorio del Comune di Accumoli",
+    "description": "*non ufficiale* RSS feed dell'Albo Pretorio di Accumoli",
+    "administration": "Comune di Accumoli",
+    "ipa_code": "c_a019",
+    "istat_code": "057001",
+    "url": "http://www.halleyweb.com/c057001/mc/mc_gridev_messi_datigrid.php?x=&tmphdata=1472496974183&combo1=9999",
+    "feed": "http://feeds.ricostruzionetrasparente.it/albi_pretori/Accumoli_feed.xml",
+    "scraper": "https://github.com/ebergam/halley2RSS",
+    "maintainer": "Enrico Bergamini <enrico.bergamini@ondata.it> (http://www.enricobergamini.it/)"
+  }
+]
