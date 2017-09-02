@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0">
+  <channel>
+    <title>titolo feed</title>
+    <link>http://example.com</link>
+    <description>questa la descrizione</description>
+    <atom:link href="http://example.com" rel="self"/>
+    <category domain="http://albopop.it/specs#channel-category-municipality">Bagheria</category>
+    <docs>http://www.rssboard.org/rss-specification</docs>
+    <generator>python-feedgen</generator>
+    <language>it</language>
+    <lastBuildDate>Sat, 02 Sep 2017 16:17:53 +0000</lastBuildDate>
+    <item>
+      <title>ORDINANZA SINDACALE N. 21 DEL 06-12-2016</title>
+      <guid isPermaLink="false">http://www.comune.acquacanina.mc.it/provvedimenti-cms/ordinanza-sindacale-n-21-del-06-12-2016/</guid>
+      <category domain="http://albopop.it/specs#item-category-type">Provvedimento</category>
+      <enclosure url="http://www.comune.acquacanina.mc.it/wp-content/blogs.dir/22/files/ORDINANZA-N.-21-DEL-06-DIC-2016.pdf" length="2014" type="application/pdf"/>
+    </item>
+    <item>
+      <title>ORDINANZA N. 1/TERREMOTO/DELIMITAZIONE AREA "ZONA ROSSA" DEL TERRITORIO DEL COMUNE DI ACQUCANINA</title>
+      <guid isPermaLink="false">http://www.comune.acquacanina.mc.it/provvedimenti-cms/ordinanza-n-1terremotodelimitazione-area-zona-rossa-del-territorio-del-comune-di-acqucanina/</guid>
+      <category domain="http://albopop.it/specs#item-category-type">Provvedimento</category>
+      <enclosure url="http://www.comune.acquacanina.mc.it/wp-content/blogs.dir/22/files/COMUNE-DI-ACQUACANINA-ORDINANZA-N.-1-TERREMOTO.pdf" length="2014" type="application/pdf"/>
+    </item>
+    <item>
+      <title>COMUNE DI ACQUACANINA ORARIO DEGLI UFFICIO DAL 01/10/2015</title>
+      <guid isPermaLink="false">http://www.comune.acquacanina.mc.it/avvisi-cms/comune-di-acquacanina-orario-degli-ufficio-dal-01102015/</guid>
+      <category domain="http://albopop.it/specs#item-category-type">Avviso e segnalazione</category>
+      <enclosure url="http://www.comune.acquacanina.mc.it/wp-content/blogs.dir/22/files/orario-apertura-uffici-comune-di-Acquacanina1.pdf" length="2014" type="application/pdf"/>
+    </item>
+  </channel>
+</rss>
