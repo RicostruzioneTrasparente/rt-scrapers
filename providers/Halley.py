@@ -28,6 +28,8 @@ from bs4 import BeautifulSoup as bs
 # - urls: extract single item urls from index page
 # - item: extract and structure data from single item page
 #
+# WARNING: class name is also the value of provider column in elenco_albi.csv
+#
 class Halley(Provider):
 
     # Mandatory attributes

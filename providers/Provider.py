@@ -17,7 +17,7 @@ class Provider():
         if isinstance(ar,arrow.arrow.Arrow):
             return ar.strftime(self.output_format)
         elif isinstance(ar,str) and ar:
-            return arrow.get(ar,self.input_format).replace(tzinfo=self.tz).strftime(self.output_format)
+            return self.dt(arrow.get(ar,self.input_format).replace(tzinfo=self.tz))
         else:
             return ""
 
