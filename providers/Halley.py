@@ -84,9 +84,17 @@ class Halley(Provider):
             if cell.findAll('a'):
                 contents.append([])
                 for a in cell.findAll('a'):
+
+                    if a.get('onlick'):
+                        href = a['onclick'].replace("window.open('","").replace("');","").strip()
+                    elif a.get('href'):
+                        href = a['href'].strip()
+                    else:
+                        href = ""
+
                     contents[-1].append({
                         "content": a.text.strip(),
-                        "href": self.options["base_url"] + a['onclick'].replace("window.open('","").replace("');","").strip()
+                        "href": self.options["base_url"] + href
                     })
             else:
                 contents.append(cell.text.strip().strip(':'))
