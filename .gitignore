@@ -1,5 +1,6 @@
 test/
-feed/
+feeds/
+feeds
 **/__pycache__
 *.pyc
 test.csv
