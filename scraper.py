@@ -55,6 +55,6 @@ with open(sys.argv[1]) as f:
             items = [item for item in items]
         )
 
-        with open("./test/%s.xml" % line["feed_name"].split(".")[0],"w") as f:
+        with open(download_dir + "/%s.xml" % line["feed_name"].split(".")[0],"w") as f:
             f.write(feed.rss())
 
