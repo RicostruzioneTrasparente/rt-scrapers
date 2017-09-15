@@ -46,7 +46,7 @@ class Halley(Provider):
     # Scrape index page and return single item urls
     def urls(self):
 
-        index_page_url = self.options["base_url"] + "/mc_gridev_messi_datigrid.php"
+        index_page_url = self.options["base_url"] + "mc_gridev_messi_datigrid.php"
         index_page_response = requests.get(index_page_url)
 
         # Manage exceptions and return consistent values
@@ -62,7 +62,7 @@ class Halley(Provider):
         for row in index_page_soup.findAll("row"):
 
             single_page_id = row['id'].strip()
-            single_page_url =  self.options["base_url"] + "/mc_gridev_dettaglio.php?id_pubbl=%s" % single_page_id
+            single_page_url =  self.options["base_url"] + "mc_gridev_dettaglio.php?id_pubbl=%s" % single_page_id
 
             yield single_page_url
 
@@ -76,7 +76,7 @@ class Halley(Provider):
             return None # None items are dropped in final feed
 
         single_page_soup = bs(single_page_response.content,"lxml")
-        logging.info("- Scraping %s" % single_page_url)
+        logging.debug("- Scraping %s" % single_page_url)
 
         ### MAIN SCRAPING LOGIC ###
         contents = []
