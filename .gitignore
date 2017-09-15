@@ -4,3 +4,5 @@ feeds
 **/__pycache__
 *.pyc
 test.csv
+*.service
+*.timer
