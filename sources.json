@@ -682,11 +682,11 @@
    "administration": "Comune di Fano Adriano",
    "ipa_code": "c_d489",
    "istat_code": 67024,
-   "url": "https://www.halleyweb.com/c067024/mc/mc_p_ricerca.php?x=",
-   "feed": "http://www.semplicepa.it/rssfeed/067024.xml",
-   "scraper": "http://www.semplicepa.it/semplice-pa/",
-   "maintainer": "SemplicePA <info@eti3.it> ()http://www.semplicepa.it",
-   "active": 0
+   "url": "https://www.halleyweb.com/c067024/mc/mc_p_ricerca.php",
+   "feed": "http://feeds.ricostruzionetrasparente.it/albi_pretori/Fano Adriano_feed.xml",
+   "scraper": "https://github.com/RicostruzioneTrasparente/rt-scrapers/blob/develop/providers/Halley.py",
+   "maintainer": "Alessio Cimarelli <alessio.cimarelli@gmail.com> (http://www.ricostruzionetrasparente.it)",
+   "active": 1
  },
  {
    "id": "c_d501_a",
@@ -865,10 +865,10 @@
    "ipa_code": "c_e868",
    "istat_code": 44027,
    "url": "http://www.halleyweb.com/c044027/mc/mc_p_ricerca.php",
-   "feed": "http://www.semplicepa.it/rssfeed/044027.xml",
-   "scraper": "http://www.semplicepa.it/semplice-pa/",
-   "maintainer": "SemplicePA <info@eti3.it> ()http://www.semplicepa.it",
-   "active": 0
+   "feed": "http://feeds.ricostruzionetrasparente.it/albi_pretori/Maltignano_feed.xml",
+   "scraper": "https://github.com/RicostruzioneTrasparente/rt-scrapers/blob/develop/providers/Halley.py",
+   "maintainer": "Alessio Cimarelli <alessio.cimarelli@gmail.com> (http://www.ricostruzionetrasparente.it)",
+   "active": 1
  },
  {
    "id": "c_f021_a",
@@ -982,10 +982,10 @@
    "ipa_code": "c_f599",
    "istat_code": 109021,
    "url": "http://www.tecuting.it/c044046/mc/mc_p_ricerca.php",
-   "feed": "http://www.semplicepa.it/rssfeed/109021.xml",
-   "scraper": "http://www.semplicepa.it/semplice-pa/",
-   "maintainer": "SemplicePA <info@eti3.it> ()http://www.semplicepa.it",
-   "active": 0
+   "feed": "http://feeds.ricostruzionetrasparente.it/albi_pretori/Monte Rinaldo_feed.xml",
+   "scraper": "https://github.com/RicostruzioneTrasparente/rt-scrapers/blob/develop/providers/Halley.py",
+   "maintainer": "Alessio Cimarelli <alessio.cimarelli@gmail.com> (http://www.ricostruzionetrasparente.it)",
+   "active": 1
  },
  {
    "id": "c_f622_a",
@@ -1268,10 +1268,10 @@
    "ipa_code": "c_g608",
    "istat_code": 67034,
    "url": "http://www.comune.pietracamela.te.it/atti/albopretorio.aspx?id=304",
-   "feed": "http://www.semplicepa.it/rssfeed/067034.xml",
-   "scraper": "http://www.semplicepa.it/semplice-pa/",
-   "maintainer": "SemplicePA <info@eti3.it> ()http://www.semplicepa.it",
-   "active": 0
+   "feed": "http://feeds.ricostruzionetrasparente.it/albi_pretori/Pietracamela_feed.xml",
+   "scraper": "https://github.com/RicostruzioneTrasparente/rt-scrapers/blob/develop/providers/Halley.py",
+   "maintainer": "Alessio Cimarelli <alessio.cimarelli@gmail.com> (http://www.ricostruzionetrasparente.it)",
+   "active": 1
  },
  {
    "id": "c_g657_a",
@@ -1411,10 +1411,10 @@
    "ipa_code": "c_h015",
    "istat_code": 54043,
    "url": "http://halleyweb.com/c054043/mc/mc_p_ricerca.php",
-   "feed": "http://www.semplicepa.it/rssfeed/054043.xml",
-   "scraper": "http://www.semplicepa.it/semplice-pa/",
-   "maintainer": "SemplicePA <info@eti3.it> ()http://www.semplicepa.it",
-   "active": 0
+   "feed": "http://feeds.ricostruzionetrasparente.it/albi_pretori/Preci_feed.xml",
+   "scraper": "https://github.com/RicostruzioneTrasparente/rt-scrapers/blob/develop/providers/Halley.py",
+   "maintainer": "Alessio Cimarelli <alessio.cimarelli@gmail.com> (http://www.ricostruzionetrasparente.it)",
+   "active": 1
  },
  {
    "id": "c_h282_a",
@@ -1567,10 +1567,10 @@
    "ipa_code": "c_i436",
    "istat_code": 43049,
    "url": "http://www.comune.sarnano.mc.it/albo-pretorio/",
-   "feed": "http://www.semplicepa.it/rssfeed/043049.xml",
-   "scraper": "http://www.semplicepa.it/semplice-pa/",
-   "maintainer": "SemplicePA <info@eti3.it> ()http://www.semplicepa.it",
-   "active": 0
+   "feed": "http://feeds.ricostruzionetrasparente.it/albi_pretori/Sarnano_feed.xml",
+   "scraper": "https://github.com/RicostruzioneTrasparente/rt-scrapers/blob/develop/providers/Halley.py",
+   "maintainer": "Alessio Cimarelli <alessio.cimarelli@gmail.com> (http://www.ricostruzionetrasparente.it)",
+   "active": 1
  },
  {
    "id": "c_i523_a",
@@ -1580,10 +1580,10 @@
    "ipa_code": "c_i523",
    "istat_code": 54047,
    "url": "https://www.halleyweb.com/c054047/mc/mc_p_ricerca.php",
-   "feed": "http://www.semplicepa.it/rssfeed/054047.xml",
-   "scraper": "http://www.semplicepa.it/semplice-pa/",
-   "maintainer": "SemplicePA <info@eti3.it> ()http://www.semplicepa.it",
-   "active": 0
+   "feed": "http://feeds.ricostruzionetrasparente.it/albi_pretori/Scheggino_feed.xml",
+   "scraper": "https://github.com/RicostruzioneTrasparente/rt-scrapers/blob/develop/providers/Halley.py",
+   "maintainer": "Alessio Cimarelli <alessio.cimarelli@gmail.com> (http://www.ricostruzionetrasparente.it)",
+   "active": 1
  },
  {
    "id": "c_i569_a",
