@@ -110,7 +110,7 @@ class Halley(Provider):
             title = document["Oggetto Atto"],
             link = single_page_url,
             description = document["Oggetto Atto"],
-            pubDate = self.dt(document["Data Atto"] or document["Data Inizio Pubblicazione"]),
+            pubDate = self.dt(document.get("Data Atto") or document.get("Data Inizio Pubblicazione")),
             guid = Guid(single_page_url),
             categories = [
                 c
@@ -122,19 +122,19 @@ class Halley(Provider):
                     Category(
                         domain = self.specs_base_url + "#" + "item-category-type",
                         category = document["Tipo Atto"]
-                    ) if document["Tipo Atto"] else None,
+                    ) if document.get("Tipo Atto") else None,
                     Category(
                         domain = self.specs_base_url + "#" + "item-category-pubStart",
-                        category = self.dt(document["Data Inizio Pubblicazione"] or document["Data Atto"])
+                        category = self.dt(document.get("Data Inizio Pubblicazione") or document.get("Data Atto"))
                     ),
                     Category(
                         domain = self.specs_base_url + "#" + "item-category-pubEnd",
                         category = self.dt(document["Data Fine Pubblicazione"])
-                    ) if document["Data Fine Pubblicazione"] else None,
+                    ) if document.get("Data Fine Pubblicazione") else None,
                     Category(
                         domain = self.specs_base_url + "#" + "item-category-unit",
                         category = document["Mittente"]
-                    ) if document["Mittente"] else None
+                    ) if document.get("Mittente") else None
                 ]
                 if c is not None
             ],
