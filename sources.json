@@ -20,10 +20,10 @@
    "ipa_code": "c_a031",
    "istat_code": 43001,
    "url": "http://www.comune.acquacanina.mc.it/albo-pretorio/",
-   "feed": "",
-   "scraper": "",
-   "maintainer": "",
-   "active": 0
+   "feed": "http://feeds.ricostruzionetrasparente.it/albi_pretori/Acquacanina_feed.xml",
+   "scraper": "https://github.com/RicostruzioneTrasparente/rt-scrapers/blob/develop/providers/Task1.py",
+   "maintainer": "Alessio Cimarelli <alessio.cimarelli@gmail.com> (http://www.ricostruzionetrasparente.it)",
+   "active": 1
  },
  {
    "id": "c_a044_a",
@@ -644,10 +644,10 @@
    "ipa_code": "c_d429",
    "istat_code": 43016,
    "url": "http://www.comune.esanatoglia.mc.it/albo-pretorio/",
-   "feed": "http://www.semplicepa.it/rssfeed/043016.xml",
-   "scraper": "http://www.semplicepa.it/semplice-pa/",
-   "maintainer": "SemplicePA <info@eti3.it> ()http://www.semplicepa.it",
-   "active": 0
+   "feed": "http://feeds.ricostruzionetrasparente.it/albi_pretori/Esanatoglia_feed.xml",
+   "scraper": "https://github.com/RicostruzioneTrasparente/rt-scrapers/blob/develop/providers/Task1.py",
+   "maintainer": "Alessio Cimarelli <alessio.cimarelli@gmail.com> (http://www.ricostruzionetrasparente.it)",
+   "active": 1
  },
  {
    "id": "c_d451_a",
@@ -1307,10 +1307,10 @@
    "ipa_code": "c_g690",
    "istat_code": 43039,
    "url": "http://www.comune.pioraco.mc.it/albo-pretorio/",
-   "feed": "",
-   "scraper": "",
-   "maintainer": "",
-   "active": 0
+   "feed": "http://feeds.ricostruzionetrasparente.it/albi_pretori/Pioraco_feed.xml",
+   "scraper": "https://github.com/RicostruzioneTrasparente/rt-scrapers/blob/develop/providers/Task1.py",
+   "maintainer": "Alessio Cimarelli <alessio.cimarelli@gmail.com> (http://www.ricostruzionetrasparente.it)",
+   "active": 1
  },
  {
    "id": "c_g726_a",
