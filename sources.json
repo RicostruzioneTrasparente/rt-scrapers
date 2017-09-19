@@ -163,10 +163,10 @@
    "ipa_code": "c_a739",
    "istat_code": 43004,
    "url": "http://www.comune.belfortedelchienti.mc.it/albo-pretorio/",
-   "feed": "",
-   "scraper": "",
-   "maintainer": "",
-   "active": 0
+   "feed": "http://feeds.ricostruzionetrasparente.it/albi_pretori/Belforte del Chienti_feed.xml",
+   "scraper": "https://github.com/RicostruzioneTrasparente/rt-scrapers/blob/develop/providers/Task2.py",
+   "maintainer": "Alessio Cimarelli <alessio.cimarelli@gmail.com> (http://www.ricostruzionetrasparente.it)",
+   "active": 1
  },
  {
    "id": "c_a760_a",
@@ -280,10 +280,10 @@
    "ipa_code": "c_b561",
    "istat_code": 43008,
    "url": "http://www.comune.camporotondodifiastrone.mc.it/albo-pretorio/",
-   "feed": "",
-   "scraper": "",
-   "maintainer": "",
-   "active": 0
+   "feed": "http://feeds.ricostruzionetrasparente.it/albi_pretori/Camporotondo di Fiastrone_feed.xml",
+   "scraper": "https://github.com/RicostruzioneTrasparente/rt-scrapers/blob/develop/providers/Task2.py",
+   "maintainer": "Alessio Cimarelli <alessio.cimarelli@gmail.com> (http://www.ricostruzionetrasparente.it)",
+   "active": 1
  },
  {
    "id": "c_b569_a",
@@ -475,10 +475,10 @@
    "ipa_code": "c_c582",
    "istat_code": 43011,
    "url": "http://www.comune.cessapalombo.mc.it/albo-pretorio/",
-   "feed": "",
-   "scraper": "",
-   "maintainer": "",
-   "active": 0
+   "feed": "http://feeds.ricostruzionetrasparente.it/albi_pretori/Cessapalombo_feed.xml",
+   "scraper": "https://github.com/RicostruzioneTrasparente/rt-scrapers/blob/develop/providers/Task2.py",
+   "maintainer": "Alessio Cimarelli <alessio.cimarelli@gmail.com> (http://www.ricostruzionetrasparente.it)",
+   "active": 1
  },
  {
    "id": "c_c704_a",
@@ -1593,10 +1593,10 @@
    "ipa_code": "c_i569",
    "istat_code": 43050,
    "url": "http://www.comune.sefro.mc.it/albo-pretorio/",
-   "feed": "",
-   "scraper": "",
-   "maintainer": "",
-   "active": 0
+   "feed": "http://feeds.ricostruzionetrasparente.it/albi_pretori/Sefro_feed.xml",
+   "scraper": "https://github.com/RicostruzioneTrasparente/rt-scrapers/blob/develop/providers/Task2.py",
+   "maintainer": "Alessio Cimarelli <alessio.cimarelli@gmail.com> (http://www.ricostruzionetrasparente.it)",
+   "active": 1
  },
  {
    "id": "c_i585_a",
