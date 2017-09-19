@@ -6,8 +6,9 @@ from rfeed import *
 
 # Optional imports
 import requests, mimetypes, logging, re
-logging.basicConfig(level=logging.DEBUG)
+logging.basicConfig(level=logging.INFO)
 from bs4 import BeautifulSoup as bs
+import humanfriendly
 
 # Custom provider class inherit from the Provider one defined in providers/Provider.py file
 #
@@ -32,6 +33,10 @@ from bs4 import BeautifulSoup as bs
 #
 class Task1(Task):
 
+    # Mandatory attributes
+    # Datetime format of scraped data
+    input_format = "DD/MM/YYYY"
+
     # Scrape a single item page from its url and return structured data as Item() instance (from rfeed)
     def item(self,single_page_url):
         # From the url you can fetch the single item page and scrape data from it
@@ -40,7 +45,7 @@ class Task1(Task):
         single_page_response = requests.get(single_page_url)
 
         if single_page_response.status_code != 200:
-            print("Single page %s unavailable!" % single_page_id)
+            logging.warning("Single page %s unavailable!" % single_page_url)
             return None # None items are dropped in final feed
 
         single_page_soup = bs(single_page_response.content,"lxml")
@@ -49,9 +54,9 @@ class Task1(Task):
         single_page_table = single_page_soup.find("div", class_="info")
 
         description = single_page_table.find("div", class_="etichettalunga").text.strip()
-        id = re.search("N. ([^ ]+)", description).group(1).strip()
-        labels = [cell.text.strip().strip(":") for cell in single_page_table.findAll("div", class_="etichetta")]
-        values = [cell.text.strip() for cell in single_page_table.findAll("div", class_="valore")]
+        id = re.search("N\. ([^ ]+)", description).group(1).strip()
+        labels = [cell.text.strip().strip(":") for cell in single_page_table.find_all("div", class_="etichetta")]
+        values = [cell.text.strip() for cell in single_page_table.find_all("div", class_="valore")]
         record = dict(zip(labels,values))
 
         if not self.options["index_items"].get(id):
@@ -91,10 +96,16 @@ class Task1(Task):
             enclosure = [
                 Enclosure(
                     url = enclosure.find("a").get("href"),
-                    length = 3000,
+                    length = humanfriendly.parse_size(
+                        re.search(
+                            "([\d\.]+ ?[A-Z]B)",
+                            enclosure.find("div", class_="testokb").text.strip()
+                        ).group(1).strip(),
+                        binary=True
+                    ) if enclosure.find("div", class_="testokb") else 3000,
                     type = mimetypes.guess_type(enclosure.find("a").get("href"))[0] or "application/octet-stream"
                 )
-                for enclosure in single_page_soup.findAll("div", class_="testoallegato")
+                for enclosure in single_page_soup.find_all("div", class_="testoallegato")
             ]
         )
 

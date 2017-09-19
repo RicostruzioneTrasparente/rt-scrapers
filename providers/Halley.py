@@ -152,7 +152,11 @@ class Halley(Provider):
     # Unavailable items are filtered out
     def items(self, single_page_urls):
         for single_page_url in single_page_urls:
-            item = self.item(single_page_url)
-            if item:
-                yield item
+            try:
+                item = self.item(single_page_url)
+                if item:
+                    yield item
+            except Exception as e:
+                logging.warning("Error scraping page %s: %s" % ( single_page_url , e ))
+                continue
 

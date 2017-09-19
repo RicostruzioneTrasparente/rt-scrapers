@@ -65,7 +65,11 @@ class Sample(Provider):
         # so you can manage here the scraping logic if all items are in the index page
         # and there are no single item pages to fetch
         for single_page_url in single_page_urls:
-            item = self.item(single_page_url)
-            if item:
-                yield item
+            try:
+                item = self.item(single_page_url)
+                if item:
+                    yield item
+            except Exception as e:
+                logging.warning("Error scraping page %s: %s" % ( single_page_url , e ))
+                continue
 
