@@ -86,18 +86,18 @@ class Halley(Provider):
                 for a in cell.findAll('a'):
 
                     if a.get('onlick'):
-                        href = a['onclick'].replace("window.open('","").replace("');","").strip()
+                        href = a['onclick'].replace("window.open('","").replace("');","")
                     elif a.get('href'):
-                        href = a['href'].strip()
+                        href = a['href']
                     else:
                         href = ""
 
                     contents[-1].append({
-                        "content": a.text.strip(),
-                        "href": self.options["base_url"] + href
+                        "content": self.clean_string(a.text),
+                        "href": self.options["base_url"] + self.clean_string(href)
                     })
             else:
-                contents.append(cell.text.strip().strip(':'))
+                contents.append(self.clean_string(cell.text).strip(':'))
 
         document = dict([tuple(contents[i:i+2]) for i in range(0,len(contents),2)])
 
@@ -110,7 +110,7 @@ class Halley(Provider):
             title = document["Oggetto Atto"],
             link = single_page_url,
             description = document["Oggetto Atto"],
-            pubDate = self.dt(document.get("Data Atto") or document.get("Data Inizio Pubblicazione")),
+            pubDate = self.format_datetime(document.get("Data Atto") or document.get("Data Inizio Pubblicazione")),
             guid = Guid(single_page_url),
             categories = [
                 c
@@ -125,11 +125,11 @@ class Halley(Provider):
                     ) if document.get("Tipo Atto") else None,
                     Category(
                         domain = self.specs_base_url + "#" + "item-category-pubStart",
-                        category = self.dt(document.get("Data Inizio Pubblicazione") or document.get("Data Atto"))
+                        category = self.format_datetime(document.get("Data Inizio Pubblicazione") or document.get("Data Atto"))
                     ),
                     Category(
                         domain = self.specs_base_url + "#" + "item-category-pubEnd",
-                        category = self.dt(document["Data Fine Pubblicazione"])
+                        category = self.format_datetime(document["Data Fine Pubblicazione"])
                     ) if document.get("Data Fine Pubblicazione") else None,
                     Category(
                         domain = self.specs_base_url + "#" + "item-category-unit",

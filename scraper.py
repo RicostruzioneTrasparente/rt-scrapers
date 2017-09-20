@@ -44,7 +44,7 @@ with open(sys.argv[1]) as f:
             link = p.feed_base_url + line["feed_name"],
             description = "*non ufficiale* RSS feed dell'Albo Pretorio del %s" % line["channel-category-name"],
             language = p.language,
-            pubDate = p.dt(now),
+            pubDate = p.format_datetime(now),
             webMaster = line["webmaster"],
             docs = p.docs_base_url + line["docs"].lower(),
             copyright = "Copyright %d %s" % ( now.year , line["channel-category-name"] ),

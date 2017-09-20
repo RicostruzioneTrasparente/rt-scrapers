@@ -69,13 +69,13 @@ class Task(Provider):
             return []
 
         headers = [
-            header.text.strip().strip(":")
+            self.clean_string(header.text).strip(":")
             for header in index_table.find("tr").find_all("th")
         ]
 
         results = [
             {
-                headers[i]: cell.text.strip()
+                headers[i]: self.clean_string(cell.text)
                 for i, cell in enumerate(row.find_all("td"))
             }
             for row in index_table.find_all("tr")[1:]
@@ -88,9 +88,10 @@ class Task(Provider):
 
         for a in index_table.find_all("a"):
             if a.get("href"):
-                yield a.get("href").strip()
+                yield self.clean_string(a.get("href"))
 
     # Scrape a single item page from its url and return structured data as Item() instance (from rfeed)
+    # Overloaded by Task1 and Task2 methods
     def item(self,single_page_url):
         pass
 

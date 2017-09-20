@@ -49,10 +49,10 @@ class Task1(Task):
 
         single_page_table = single_page_soup.find("div", class_="info")
 
-        description = single_page_table.find("div", class_="etichettalunga").text.strip()
-        id = re.search("N\. ([^ ]+)", description).group(1).strip()
-        labels = [cell.text.strip().strip(":") for cell in single_page_table.find_all("div", class_="etichetta")]
-        values = [cell.text.strip() for cell in single_page_table.find_all("div", class_="valore")]
+        description = self.clean_string(single_page_table.find("div", class_="etichettalunga").text)
+        id = self.clean_string(re.search("N\. ([^ ]+)", description).group(1))
+        labels = [self.clean_string(cell.text).strip(":") for cell in single_page_table.find_all("div", class_="etichetta")]
+        values = [self.clean_string(cell.text) for cell in single_page_table.find_all("div", class_="valore")]
         record = dict(zip(labels,values))
 
         if not self.options["index_items"].get(id):
@@ -65,7 +65,7 @@ class Task1(Task):
             title = document["Titolo"],
             link = single_page_url,
             description = description,
-            pubDate = self.dt(document.get("Esecutiva dal") or document.get("Data di pubblicazione") or document.get("Dal")),
+            pubDate = self.format_datetime(document.get("Esecutiva dal") or document.get("Data di pubblicazione") or document.get("Dal")),
             guid = Guid(single_page_url),
             categories = [
                 c
@@ -80,11 +80,11 @@ class Task1(Task):
                     ) if document.get("Tipologia pubblicazione") else None,
                     Category(
                         domain = self.specs_base_url + "#" + "item-category-pubStart",
-                        category = self.dt(document.get("Dal") or document.get("Data di pubblicazione") or document.get("Esecutiva dal"))
+                        category = self.format_datetime(document.get("Dal") or document.get("Data di pubblicazione") or document.get("Esecutiva dal"))
                     ),
                     Category(
                         domain = self.specs_base_url + "#" + "item-category-pubEnd",
-                        category = self.dt(document["Al"])
+                        category = self.format_datetime(document["Al"])
                     ) if document.get("Al") else None
                 ]
                 if c is not None
@@ -94,9 +94,9 @@ class Task1(Task):
                     url = enclosure.find("a").get("href"),
                     length = humanfriendly.parse_size(
                         re.search(
-                            "([\d\.]+ ?[A-Z]B)",
-                            enclosure.find("div", class_="testokb").text.strip()
-                        ).group(1).strip(),
+                            "([\d\.]+ ?.B)",
+                            self.clean_string(enclosure.find("div", class_="testokb").text)
+                        ).group(1),
                         binary=True
                     ) if enclosure.find("div", class_="testokb") else 3000,
                     type = mimetypes.guess_type(enclosure.find("a").get("href"))[0] or "application/octet-stream"
