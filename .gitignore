@@ -1,0 +1,8 @@
+test/
+feeds/
+feeds
+**/__pycache__
+*.pyc
+test.csv
+*.service
+*.timer

@@ -1,0 +1,5 @@
+requests
+arrow
+bs4
+-e git+https://github.com/jenkin/rfeed.git@develop#egg=rfeed
+humanfriendly
