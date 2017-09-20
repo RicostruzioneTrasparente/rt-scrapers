@@ -34,7 +34,7 @@ class Task(Provider):
 
     # Mandatory attributes
     # Datetime format of scraped data
-    #input_format = ""
+    input_format = "D/M/YYYY"
 
     # Optional attributes
     # ...

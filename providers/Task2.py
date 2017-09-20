@@ -33,10 +33,6 @@ import humanfriendly
 #
 class Task2(Task):
 
-    # Mandatory attributes
-    # Datetime format of scraped data
-    input_format = "D/MM/YYYY"
-
     # Scrape a single item page from its url and return structured data as Item() instance (from rfeed)
     def item(self,single_page_url):
         # From the url you can fetch the single item page and scrape data from it
