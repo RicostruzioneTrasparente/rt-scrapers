@@ -6,6 +6,7 @@ Contenuto:
 - `sources.json`: tutti i feed di albopop relativi agli albi pretori scrapati e indicizzati;
 - `elenco_albi.csv`: tutti gli albi pretori scrapati regolarmente;
 - `scraper.py`: scraper universale per gli albi pretori;
+- `test.py`: strumento di test dello scraper (output in console);
 - `providers/`: regole di scraping per provider.
 
 ## Come proporre nuove fonti
