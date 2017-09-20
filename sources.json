@@ -20,10 +20,10 @@
    "ipa_code": "c_a031",
    "istat_code": 43001,
    "url": "http://www.comune.acquacanina.mc.it/albo-pretorio/",
-   "feed": "",
-   "scraper": "",
-   "maintainer": "",
-   "active": 0
+   "feed": "http://feeds.ricostruzionetrasparente.it/albi_pretori/Acquacanina_feed.xml",
+   "scraper": "https://github.com/RicostruzioneTrasparente/rt-scrapers/blob/develop/providers/Task1.py",
+   "maintainer": "Alessio Cimarelli <alessio.cimarelli@gmail.com> (http://www.ricostruzionetrasparente.it)",
+   "active": 1
  },
  {
    "id": "c_a044_a",
@@ -163,10 +163,10 @@
    "ipa_code": "c_a739",
    "istat_code": 43004,
    "url": "http://www.comune.belfortedelchienti.mc.it/albo-pretorio/",
-   "feed": "",
-   "scraper": "",
-   "maintainer": "",
-   "active": 0
+   "feed": "http://feeds.ricostruzionetrasparente.it/albi_pretori/Belforte del Chienti_feed.xml",
+   "scraper": "https://github.com/RicostruzioneTrasparente/rt-scrapers/blob/develop/providers/Task2.py",
+   "maintainer": "Alessio Cimarelli <alessio.cimarelli@gmail.com> (http://www.ricostruzionetrasparente.it)",
+   "active": 1
  },
  {
    "id": "c_a760_a",
@@ -280,10 +280,10 @@
    "ipa_code": "c_b561",
    "istat_code": 43008,
    "url": "http://www.comune.camporotondodifiastrone.mc.it/albo-pretorio/",
-   "feed": "",
-   "scraper": "",
-   "maintainer": "",
-   "active": 0
+   "feed": "http://feeds.ricostruzionetrasparente.it/albi_pretori/Camporotondo di Fiastrone_feed.xml",
+   "scraper": "https://github.com/RicostruzioneTrasparente/rt-scrapers/blob/develop/providers/Task2.py",
+   "maintainer": "Alessio Cimarelli <alessio.cimarelli@gmail.com> (http://www.ricostruzionetrasparente.it)",
+   "active": 1
  },
  {
    "id": "c_b569_a",
@@ -475,10 +475,10 @@
    "ipa_code": "c_c582",
    "istat_code": 43011,
    "url": "http://www.comune.cessapalombo.mc.it/albo-pretorio/",
-   "feed": "",
-   "scraper": "",
-   "maintainer": "",
-   "active": 0
+   "feed": "http://feeds.ricostruzionetrasparente.it/albi_pretori/Cessapalombo_feed.xml",
+   "scraper": "https://github.com/RicostruzioneTrasparente/rt-scrapers/blob/develop/providers/Task2.py",
+   "maintainer": "Alessio Cimarelli <alessio.cimarelli@gmail.com> (http://www.ricostruzionetrasparente.it)",
+   "active": 1
  },
  {
    "id": "c_c704_a",
@@ -644,10 +644,10 @@
    "ipa_code": "c_d429",
    "istat_code": 43016,
    "url": "http://www.comune.esanatoglia.mc.it/albo-pretorio/",
-   "feed": "http://www.semplicepa.it/rssfeed/043016.xml",
-   "scraper": "http://www.semplicepa.it/semplice-pa/",
-   "maintainer": "SemplicePA <info@eti3.it> ()http://www.semplicepa.it",
-   "active": 0
+   "feed": "http://feeds.ricostruzionetrasparente.it/albi_pretori/Esanatoglia_feed.xml",
+   "scraper": "https://github.com/RicostruzioneTrasparente/rt-scrapers/blob/develop/providers/Task1.py",
+   "maintainer": "Alessio Cimarelli <alessio.cimarelli@gmail.com> (http://www.ricostruzionetrasparente.it)",
+   "active": 1
  },
  {
    "id": "c_d451_a",
@@ -1307,10 +1307,10 @@
    "ipa_code": "c_g690",
    "istat_code": 43039,
    "url": "http://www.comune.pioraco.mc.it/albo-pretorio/",
-   "feed": "",
-   "scraper": "",
-   "maintainer": "",
-   "active": 0
+   "feed": "http://feeds.ricostruzionetrasparente.it/albi_pretori/Pioraco_feed.xml",
+   "scraper": "https://github.com/RicostruzioneTrasparente/rt-scrapers/blob/develop/providers/Task1.py",
+   "maintainer": "Alessio Cimarelli <alessio.cimarelli@gmail.com> (http://www.ricostruzionetrasparente.it)",
+   "active": 1
  },
  {
    "id": "c_g726_a",
@@ -1593,10 +1593,10 @@
    "ipa_code": "c_i569",
    "istat_code": 43050,
    "url": "http://www.comune.sefro.mc.it/albo-pretorio/",
-   "feed": "",
-   "scraper": "",
-   "maintainer": "",
-   "active": 0
+   "feed": "http://feeds.ricostruzionetrasparente.it/albi_pretori/Sefro_feed.xml",
+   "scraper": "https://github.com/RicostruzioneTrasparente/rt-scrapers/blob/develop/providers/Task2.py",
+   "maintainer": "Alessio Cimarelli <alessio.cimarelli@gmail.com> (http://www.ricostruzionetrasparente.it)",
+   "active": 1
  },
  {
    "id": "c_i585_a",
