@@ -1,6 +1,8 @@
 import sys, csv, arrow
 from providers import *
 from rfeed import *
+from threading import Thread
+from queue import Queue, Empty
 
 if len(sys.argv) > 2:
     csv_filename = sys.argv[1].strip()
@@ -29,11 +31,16 @@ class Providers():
 
 providers = Providers()
 now = arrow.now()
+q = Queue()
 
-with open(sys.argv[1]) as f:
+def spider(q):
 
-    reader = csv.DictReader(f)
-    for line in reader:
+    while not q.empty():
+
+        try:
+            line = q.get(timeout = 1)
+        except Empty:
+            break
 
         p = providers.get(line["provider"], line["options"])
 
@@ -57,4 +64,25 @@ with open(sys.argv[1]) as f:
 
         with open(download_dir + "/%s.xml" % line["feed_name"].split(".")[0],"w") as f:
             f.write(feed.rss())
+
+        q.task_done()
+
+with open(sys.argv[1]) as f:
+    reader = csv.DictReader(f)
+    for line in reader:
+        q.put(line)
+
+num_spiders = 1
+spiders = []
+for n in range(num_spiders):
+    t = Thread(
+        name = "Spider #%d" % n,
+        target = spider,
+        args = (q,)
+    )
+    spiders.append(t)
+    t.start()
+
+for t in spiders:
+    t.join()
 
