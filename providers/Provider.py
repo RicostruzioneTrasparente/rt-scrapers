@@ -33,3 +33,6 @@ class Provider():
         new_string = re.sub(r" {2,}", " ", new_string)
         return new_string.strip()
 
+    # Public method called by scraper.py
+    def scrape(self):
+        return []

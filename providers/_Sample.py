@@ -73,3 +73,7 @@ class Sample(Provider):
                 logging.warning("Error scraping page %s: %s" % ( single_page_url , e ))
                 continue
 
+    # Public method called by scraper.py
+    def scrape(self):
+        return self.items(self.urls())
+

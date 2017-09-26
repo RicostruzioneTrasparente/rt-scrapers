@@ -37,7 +37,7 @@ with open(sys.argv[1]) as f:
 
         p = providers.get(line["provider"], line["options"])
 
-        items = p.items(p.urls())
+        items = p.scrape()
 
         feed = Feed(
             title = "AlboPOP - %s - %s" % ( line["channel-category-type"] , line["channel-category-name"] ),
