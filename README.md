@@ -1,5 +1,5 @@
 # rt-scrapers
-Curated list of sources for scrapers and related issue tracker.
+Curated list of sources for scrapers and related issue tracker. Multi-threading!
 
 Contenuto:
 

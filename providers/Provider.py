@@ -11,7 +11,8 @@ class Provider():
     docs_base_url = "http://albopop.it/"
     specs_base_url = "http://albopop.it/specs/"
 
-    options = {}
+    def __init__(self):
+        self.options = {}
 
     # Parse and format datetime strings
     def format_datetime(self, ar):
@@ -33,3 +34,6 @@ class Provider():
         new_string = re.sub(r" {2,}", " ", new_string)
         return new_string.strip()
 
+    # Public method called by scraper.py
+    def scrape(self):
+        return []

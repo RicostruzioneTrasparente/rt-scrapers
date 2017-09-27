@@ -1,6 +1,8 @@
-import sys, csv, arrow
-from providers import *
+import sys, csv, logging, arrow
+from providers import providers
 from rfeed import *
+from threading import Thread
+from queue import Queue, Empty
 
 if len(sys.argv) > 2:
     csv_filename = sys.argv[1].strip()
@@ -13,31 +15,27 @@ else:
     ))
     exit()
 
-class Providers():
-
-    def __init__(self):
-        self.providers = {}
-
-    def load(self, name):
-        if name in globals():
-            self.providers[name] = getattr(globals()[name],name)()
-
-    def get(self, name, opt):
-        if name not in self.providers:
-            self.load(name)
-        return self.providers[name].opts(opt)
-
-providers = Providers()
 now = arrow.now()
+q = Queue()
 
-with open(sys.argv[1]) as f:
+def spider(q):
 
-    reader = csv.DictReader(f)
-    for line in reader:
+    while not q.empty():
 
-        p = providers.get(line["provider"], line["options"])
+        try:
+            line = q.get(timeout = 1)
+        except Empty:
+            break
 
-        items = p.items(p.urls())
+        try:
+            p = getattr(providers, line["provider"])()
+            p.opts(line["options"])
+        except AttributeError as e:
+            logging.warning("Requested provider not found: %s" % line["provider"])
+            q.task_done()
+            continue
+
+        items = p.scrape()
 
         feed = Feed(
             title = "AlboPOP - %s - %s" % ( line["channel-category-type"] , line["channel-category-name"] ),
@@ -57,4 +55,30 @@ with open(sys.argv[1]) as f:
 
         with open(download_dir + "/%s.xml" % line["feed_name"].split(".")[0],"w") as f:
             f.write(feed.rss())
+
+        q.task_done()
+
+with open(sys.argv[1]) as f:
+    reader = csv.DictReader(f)
+    for line in reader:
+        q.put(line)
+
+num_spiders = 10
+spiders = []
+
+logging.info("Starting scraper with %d spiders on %d sources..." % ( num_spiders , q.qsize() ))
+
+for n in range(num_spiders):
+    t = Thread(
+        name = "Spider #%d" % n,
+        target = spider,
+        args = (q,)
+    )
+    spiders.append(t)
+    t.start()
+
+for t in spiders:
+    t.join()
+
+logging.info("... done!")
 
