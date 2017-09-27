@@ -1,5 +1,5 @@
-import sys, csv, arrow
-from providers import *
+import sys, csv, logging, arrow
+from providers import providers
 from rfeed import *
 from threading import Thread
 from queue import Queue, Empty
@@ -15,21 +15,6 @@ else:
     ))
     exit()
 
-class Providers():
-
-    def __init__(self):
-        self.providers = {}
-
-    def load(self, name):
-        if name in globals():
-            self.providers[name] = getattr(globals()[name],name)()
-
-    def get(self, name, opt):
-        if name not in self.providers:
-            self.load(name)
-        return self.providers[name].opts(opt)
-
-providers = Providers()
 now = arrow.now()
 q = Queue()
 
@@ -42,7 +27,13 @@ def spider(q):
         except Empty:
             break
 
-        p = providers.get(line["provider"], line["options"])
+        try:
+            p = getattr(providers, line["provider"])()
+            p.opts(line["options"])
+        except AttributeError as e:
+            logging.warning("Requested provider not found: %s" % line["provider"])
+            q.task_done()
+            continue
 
         items = p.scrape()
 
@@ -72,8 +63,11 @@ with open(sys.argv[1]) as f:
     for line in reader:
         q.put(line)
 
-num_spiders = 1
+num_spiders = 10
 spiders = []
+
+logging.info("Starting scraper with %d spiders on %d sources..." % ( num_spiders , q.qsize() ))
+
 for n in range(num_spiders):
     t = Thread(
         name = "Spider #%d" % n,
@@ -85,4 +79,6 @@ for n in range(num_spiders):
 
 for t in spiders:
     t.join()
+
+logging.info("... done!")
 

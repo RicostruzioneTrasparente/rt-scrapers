@@ -11,7 +11,8 @@ class Provider():
     docs_base_url = "http://albopop.it/"
     specs_base_url = "http://albopop.it/specs/"
 
-    options = {}
+    def __init__(self):
+        self.options = {}
 
     # Parse and format datetime strings
     def format_datetime(self, ar):
