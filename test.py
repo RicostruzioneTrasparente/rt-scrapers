@@ -1,5 +1,5 @@
 import sys, csv
-from providers import *
+from providers import providers
 
 if len(sys.argv) > 1:
     csv_filename = sys.argv[1].strip()
@@ -10,30 +10,21 @@ else:
     ))
     exit()
 
-class Providers():
-
-    def __init__(self):
-        self.providers = {}
-
-    def load(self, name):
-        if name in globals():
-            self.providers[name] = getattr(globals()[name],name)()
-
-    def get(self, name, opt):
-        if name not in self.providers:
-            self.load(name)
-        return self.providers[name].opts(opt)
-
-providers = Providers()
-
 with open(sys.argv[1]) as f:
 
     reader = csv.DictReader(f)
     for line in reader:
 
-        p = providers.get(line["provider"], line["options"])
-        urls = p.urls()
-        print([url for url in urls])
-        items = p.items(urls)
-        print([item for item in items])
+        try:
+            p = getattr(providers, line["provider"])()
+            p.opts(line["options"])
+        except AttributeError as e:
+            logging.warning("Requested provider not found: %s" % line["provider"])
+            q.task_done()
+            continue
+
+        urls = [url for url in p.urls()]
+        print(urls)
+        items = [item for item in p.items(urls)]
+        print(items)
 
