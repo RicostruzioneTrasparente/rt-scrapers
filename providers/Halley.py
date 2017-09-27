@@ -71,8 +71,8 @@ class Halley(Provider):
 
         single_page_response = requests.get(single_page_url)
 
-        if single_page_response.status_code != 200:
-            print("Single page %s unavailable!" % single_page_id)
+        if single_page_response.status_code != 200 or "non può essere visualizzato" in single_page_response.text:
+            print("Single page %s unavailable!" % single_page_url)
             return None # None items are dropped in final feed
 
         single_page_soup = bs(single_page_response.content,"lxml")
@@ -151,14 +151,17 @@ class Halley(Provider):
     # Simple and generic wrapper around item() method if a list of urls is passed
     # Unavailable items are filtered out
     def items(self, single_page_urls):
+
         for single_page_url in single_page_urls:
+
             try:
                 item = self.item(single_page_url)
-                if item:
-                    yield item
             except Exception as e:
                 logging.warning("Error scraping page %s: %s" % ( single_page_url , e ))
                 continue
+
+            if item:
+                yield item
 
     # Public method called by scraper.py
     def scrape(self):
