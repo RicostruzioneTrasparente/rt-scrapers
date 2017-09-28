@@ -87,7 +87,7 @@
    "url": "http://www.comune.apiro.mc.it/albo-pretorio/",
    "feed": "http://www.semplicepa.it/rssfeed/043002.xml",
    "scraper": "http://www.semplicepa.it/semplice-pa/",
-   "maintainer": "SemplicePA <info@eti3.it> ()http://www.semplicepa.it",
+   "maintainer": "SemplicePA <info@eti3.it> (http://www.semplicepa.it)",
    "active": 0
  },
  {
@@ -126,8 +126,8 @@
    "url": "http://albopretorio.webred.it/albo-c009/home.html",
    "feed": "http://www.semplicepa.it/rssfeed/055005.xml",
    "scraper": "http://www.semplicepa.it/semplice-pa/",
-   "maintainer": "SemplicePA <info@eti3.it> ()http://www.semplicepa.it",
-   "active": 0
+   "maintainer": "SemplicePA <info@eti3.it> (http://www.semplicepa.it)",
+   "active": 1
  },
  {
    "id": "c_a462_a",
@@ -269,7 +269,7 @@
    "url": "http://130.0.175.122:8090/",
    "feed": "http://www.semplicepa.it/rssfeed/067008.xml",
    "scraper": "http://www.semplicepa.it/semplice-pa/",
-   "maintainer": "SemplicePA <info@eti3.it> ()http://www.semplicepa.it",
+   "maintainer": "SemplicePA <info@eti3.it> (http://www.semplicepa.it)",
    "active": 0
  },
  {
@@ -347,7 +347,7 @@
    "url": "http://www.cmgransasso.it/castelcastagna/atti/lista.aspx",
    "feed": "http://www.semplicepa.it/rssfeed/067010.xml",
    "scraper": "http://www.semplicepa.it/semplice-pa/",
-   "maintainer": "SemplicePA <info@eti3.it> ()http://www.semplicepa.it",
+   "maintainer": "SemplicePA <info@eti3.it> (http://www.semplicepa.it)",
    "active": 0
  },
  {
@@ -542,8 +542,8 @@
    "url": "http://www.comunedicolledara.gov.it/amministrazione/halley.aspx?ID=304",
    "feed": "http://www.semplicepa.it/rssfeed/067018.xml",
    "scraper": "http://www.semplicepa.it/semplice-pa/",
-   "maintainer": "SemplicePA <info@eti3.it> ()http://www.semplicepa.it",
-   "active": 0
+   "maintainer": "SemplicePA <info@eti3.it> (http://www.semplicepa.it)",
+   "active": 1
  },
  {
    "id": "c_c877_a",
@@ -711,8 +711,8 @@
    "url": "https://urbi-fe.umbriadigitale.it/urbi/progs/urp/ur1ME002.sto?DB_NAME=e055012",
    "feed": "http://www.semplicepa.it/rssfeed/055012.xml",
    "scraper": "http://www.semplicepa.it/semplice-pa/",
-   "maintainer": "SemplicePA <info@eti3.it> ()http://www.semplicepa.it",
-   "active": 0
+   "maintainer": "SemplicePA <info@eti3.it> (http://www.semplicepa.it)",
+   "active": 1
  },
  {
    "id": "c_d564_a",
@@ -1322,8 +1322,8 @@
    "url": "http://www.comune.pizzoli.aq.it/index.php?option=com_wrapper&view=wrapper&Itemid=165",
    "feed": "http://www.semplicepa.it/rssfeed/066072.xml",
    "scraper": "http://www.semplicepa.it/semplice-pa/",
-   "maintainer": "SemplicePA <info@eti3.it> ()http://www.semplicepa.it",
-   "active": 0
+   "maintainer": "SemplicePA <info@eti3.it> (http://www.semplicepa.it)",
+   "active": 1
  },
  {
    "id": "c_g756_a",
@@ -1699,8 +1699,8 @@
    "url": "http://www.comune.tolentino.mc.it/delibere-determine-e-ordinanze/",
    "feed": "http://www.semplicepa.it/rssfeed/043053.xml",
    "scraper": "http://www.semplicepa.it/semplice-pa/",
-   "maintainer": "SemplicePA <info@eti3.it> ()http://www.semplicepa.it",
-   "active": 0
+   "maintainer": "SemplicePA <info@eti3.it> (http://www.semplicepa.it)",
+   "active": 1
  },
  {
    "id": "c_l295_a",
