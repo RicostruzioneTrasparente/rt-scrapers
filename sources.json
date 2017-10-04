@@ -267,9 +267,9 @@
    "ipa_code": "c_b515",
    "istat_code": 67008,
    "url": "http://130.0.175.122:8090/",
-   "feed": "http://www.semplicepa.it/rssfeed/067008.xml",
-   "scraper": "http://www.semplicepa.it/semplice-pa/",
-   "maintainer": "SemplicePA <info@eti3.it> (http://www.semplicepa.it)",
+   "feed": "",
+   "scraper": "",
+   "maintainer": "",
    "active": 0
  },
  {
@@ -348,7 +348,7 @@
    "feed": "http://www.semplicepa.it/rssfeed/067010.xml",
    "scraper": "http://www.semplicepa.it/semplice-pa/",
    "maintainer": "SemplicePA <info@eti3.it> (http://www.semplicepa.it)",
-   "active": 0
+   "active": 1
  },
  {
    "id": "c_c093_a",
