@@ -127,7 +127,7 @@
    "feed": "http://www.semplicepa.it/rssfeed/055005.xml",
    "scraper": "http://www.semplicepa.it/semplice-pa/",
    "maintainer": "SemplicePA <info@eti3.it> (http://www.semplicepa.it)",
-   "active": 1
+   "active": 0
  },
  {
    "id": "c_a462_a",
@@ -348,7 +348,7 @@
    "feed": "http://www.semplicepa.it/rssfeed/067010.xml",
    "scraper": "http://www.semplicepa.it/semplice-pa/",
    "maintainer": "SemplicePA <info@eti3.it> (http://www.semplicepa.it)",
-   "active": 1
+   "active": 0
  },
  {
    "id": "c_c093_a",
@@ -543,7 +543,7 @@
    "feed": "http://www.semplicepa.it/rssfeed/067018.xml",
    "scraper": "http://www.semplicepa.it/semplice-pa/",
    "maintainer": "SemplicePA <info@eti3.it> (http://www.semplicepa.it)",
-   "active": 1
+   "active": 0
  },
  {
    "id": "c_c877_a",
@@ -712,7 +712,7 @@
    "feed": "http://www.semplicepa.it/rssfeed/055012.xml",
    "scraper": "http://www.semplicepa.it/semplice-pa/",
    "maintainer": "SemplicePA <info@eti3.it> (http://www.semplicepa.it)",
-   "active": 1
+   "active": 0
  },
  {
    "id": "c_d564_a",
@@ -1323,7 +1323,7 @@
    "feed": "http://www.semplicepa.it/rssfeed/066072.xml",
    "scraper": "http://www.semplicepa.it/semplice-pa/",
    "maintainer": "SemplicePA <info@eti3.it> (http://www.semplicepa.it)",
-   "active": 1
+   "active": 0
  },
  {
    "id": "c_g756_a",
@@ -1700,7 +1700,7 @@
    "feed": "http://www.semplicepa.it/rssfeed/043053.xml",
    "scraper": "http://www.semplicepa.it/semplice-pa/",
    "maintainer": "SemplicePA <info@eti3.it> (http://www.semplicepa.it)",
-   "active": 1
+   "active": 0
  },
  {
    "id": "c_l295_a",
