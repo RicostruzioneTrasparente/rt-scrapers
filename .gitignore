@@ -6,3 +6,5 @@ feeds
 test.csv
 *.service
 *.timer
+anagrafica_con_protciv.csv
+.~lock*
