@@ -166,7 +166,7 @@
    "feed": "http://feeds.ricostruzionetrasparente.it/albi_pretori/Belforte del Chienti_feed.xml",
    "scraper": "https://github.com/RicostruzioneTrasparente/rt-scrapers/blob/develop/providers/Task2.py",
    "maintainer": "Alessio Cimarelli <alessio.cimarelli@gmail.com> (http://www.ricostruzionetrasparente.it)",
-   "active": 1
+   "active": 0
  },
  {
    "id": "c_a760_a",
@@ -283,7 +283,7 @@
    "feed": "http://feeds.ricostruzionetrasparente.it/albi_pretori/Camporotondo di Fiastrone_feed.xml",
    "scraper": "https://github.com/RicostruzioneTrasparente/rt-scrapers/blob/develop/providers/Task2.py",
    "maintainer": "Alessio Cimarelli <alessio.cimarelli@gmail.com> (http://www.ricostruzionetrasparente.it)",
-   "active": 1
+   "active": 0
  },
  {
    "id": "c_b569_a",
@@ -478,7 +478,7 @@
    "feed": "http://feeds.ricostruzionetrasparente.it/albi_pretori/Cessapalombo_feed.xml",
    "scraper": "https://github.com/RicostruzioneTrasparente/rt-scrapers/blob/develop/providers/Task2.py",
    "maintainer": "Alessio Cimarelli <alessio.cimarelli@gmail.com> (http://www.ricostruzionetrasparente.it)",
-   "active": 1
+   "active": 0
  },
  {
    "id": "c_c704_a",
@@ -647,7 +647,7 @@
    "feed": "http://feeds.ricostruzionetrasparente.it/albi_pretori/Esanatoglia_feed.xml",
    "scraper": "https://github.com/RicostruzioneTrasparente/rt-scrapers/blob/develop/providers/Task1.py",
    "maintainer": "Alessio Cimarelli <alessio.cimarelli@gmail.com> (http://www.ricostruzionetrasparente.it)",
-   "active": 1
+   "active": 0
  },
  {
    "id": "c_d451_a",
@@ -1310,7 +1310,7 @@
    "feed": "http://feeds.ricostruzionetrasparente.it/albi_pretori/Pioraco_feed.xml",
    "scraper": "https://github.com/RicostruzioneTrasparente/rt-scrapers/blob/develop/providers/Task1.py",
    "maintainer": "Alessio Cimarelli <alessio.cimarelli@gmail.com> (http://www.ricostruzionetrasparente.it)",
-   "active": 1
+   "active": 0
  },
  {
    "id": "c_g726_a",
@@ -1596,7 +1596,7 @@
    "feed": "http://feeds.ricostruzionetrasparente.it/albi_pretori/Sefro_feed.xml",
    "scraper": "https://github.com/RicostruzioneTrasparente/rt-scrapers/blob/develop/providers/Task2.py",
    "maintainer": "Alessio Cimarelli <alessio.cimarelli@gmail.com> (http://www.ricostruzionetrasparente.it)",
-   "active": 1
+   "active": 0
  },
  {
    "id": "c_i585_a",
