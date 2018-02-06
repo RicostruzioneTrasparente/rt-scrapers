@@ -23,7 +23,7 @@
    "feed": "http://feeds.ricostruzionetrasparente.it/albi_pretori/Acquacanina_feed.xml",
    "scraper": "https://github.com/RicostruzioneTrasparente/rt-scrapers/blob/develop/providers/Task1.py",
    "maintainer": "Alessio Cimarelli <alessio.cimarelli@gmail.com> (http://www.ricostruzionetrasparente.it)",
-   "active": 1
+   "active": 0
  },
  {
    "id": "c_a044_a",
