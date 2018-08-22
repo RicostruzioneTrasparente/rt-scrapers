@@ -88,7 +88,7 @@
    "feed": "http://www.semplicepa.it/rssfeed/043002.xml",
    "scraper": "http://www.semplicepa.it/semplice-pa/",
    "maintainer": "SemplicePA <info@eti3.it> (http://www.semplicepa.it)",
-   "active": 0
+   "active": 1
  },
  {
    "id": "c_a335_a",
@@ -137,10 +137,10 @@
    "ipa_code": "c_a462",
    "istat_code": 44007,
    "url": "http://www.comuneap.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/276",
-   "feed": "",
-   "scraper": "",
-   "maintainer": "",
-   "active": 0
+   "feed": "http://www.semplicepa.it/rssfeed/044007.xml",
+   "scraper": "http://www.semplicepa.it/semplice-pa/",
+   "maintainer": "SemplicePA <info@eti3.it> (http://www.semplicepa.it)",
+   "active": 1
  },
  {
    "id": "c_a656_a",
@@ -150,10 +150,10 @@
    "ipa_code": "c_a656",
    "istat_code": 66008,
    "url": "http://www.comune.barete.aq.it/index.php?option=com_content&view=article&id=23&Itemid=33",
-   "feed": "",
-   "scraper": "",
-   "maintainer": "",
-   "active": 0
+   "feed": "http://www.semplicepa.it/rssfeed/066008.xml",
+   "scraper": "http://www.semplicepa.it/semplice-pa/",
+   "maintainer": "SemplicePA <info@eti3.it> (http://www.semplicepa.it)",
+   "active": 1
  },
  {
    "id": "c_a739_a",
@@ -163,10 +163,10 @@
    "ipa_code": "c_a739",
    "istat_code": 43004,
    "url": "http://www.comune.belfortedelchienti.mc.it/albo-pretorio/",
-   "feed": "http://feeds.ricostruzionetrasparente.it/albi_pretori/Belforte del Chienti_feed.xml",
-   "scraper": "https://github.com/RicostruzioneTrasparente/rt-scrapers/blob/develop/providers/Task2.py",
-   "maintainer": "Alessio Cimarelli <alessio.cimarelli@gmail.com> (http://www.ricostruzionetrasparente.it)",
-   "active": 0
+   "feed": "http://www.semplicepa.it/rssfeed/043004.xml",
+   "scraper": "http://www.semplicepa.it/semplice-pa/",
+   "maintainer": "SemplicePA <info@eti3.it> (http://www.semplicepa.it)",
+   "active": 1
  },
  {
    "id": "c_a760_a",
@@ -228,10 +228,10 @@
    "ipa_code": "c_b358",
    "istat_code": 66013,
    "url": "http://comune.cagnanoamiterno.aq.it/index.php?id=8",
-   "feed": "",
-   "scraper": "",
-   "maintainer": "",
-   "active": 0
+   "feed": "http://www.semplicepa.it/rssfeed/066013.xml",
+   "scraper": "http://www.semplicepa.it/semplice-pa/",
+   "maintainer": "SemplicePA <info@eti3.it> (http://www.semplicepa.it)",
+   "active": 1
  },
  {
    "id": "c_b398_a",
@@ -267,10 +267,10 @@
    "ipa_code": "c_b515",
    "istat_code": 67008,
    "url": "http://130.0.175.122:8090/",
-   "feed": "",
-   "scraper": "",
-   "maintainer": "",
-   "active": 0
+   "feed": "http://www.semplicepa.it/rssfeed/067008.xml",
+   "scraper": "http://www.semplicepa.it/semplice-pa/",
+   "maintainer": "SemplicePA <info@eti3.it> (http://www.semplicepa.it)",
+   "active": 1
  },
  {
    "id": "c_b561_a",
@@ -280,10 +280,10 @@
    "ipa_code": "c_b561",
    "istat_code": 43008,
    "url": "http://www.comune.camporotondodifiastrone.mc.it/albo-pretorio/",
-   "feed": "http://feeds.ricostruzionetrasparente.it/albi_pretori/Camporotondo di Fiastrone_feed.xml",
-   "scraper": "https://github.com/RicostruzioneTrasparente/rt-scrapers/blob/develop/providers/Task2.py",
-   "maintainer": "Alessio Cimarelli <alessio.cimarelli@gmail.com> (http://www.ricostruzionetrasparente.it)",
-   "active": 0
+   "feed": "http://www.semplicepa.it/rssfeed/043008.xml",
+   "scraper": "http://www.semplicepa.it/semplice-pa/",
+   "maintainer": "SemplicePA <info@eti3.it> (http://www.semplicepa.it)",
+   "active": 1
  },
  {
    "id": "c_b569_a",
@@ -293,10 +293,10 @@
    "ipa_code": "c_b569",
    "istat_code": 66016,
    "url": "http://www.comune.campotosto.aq.it/albopretorio/",
-   "feed": "",
-   "scraper": "",
-   "maintainer": "",
-   "active": 0
+   "feed": "http://www.semplicepa.it/rssfeed/066016.xml",
+   "scraper": "http://www.semplicepa.it/semplice-pa/",
+   "maintainer": "SemplicePA <info@eti3.it> (http://www.semplicepa.it)",
+   "active": 1
  },
  {
    "id": "c_b627_a",
@@ -348,7 +348,7 @@
    "feed": "http://www.semplicepa.it/rssfeed/067010.xml",
    "scraper": "http://www.semplicepa.it/semplice-pa/",
    "maintainer": "SemplicePA <info@eti3.it> (http://www.semplicepa.it)",
-   "active": 0
+   "active": 1
  },
  {
    "id": "c_c093_a",
@@ -475,10 +475,10 @@
    "ipa_code": "c_c582",
    "istat_code": 43011,
    "url": "http://www.comune.cessapalombo.mc.it/albo-pretorio/",
-   "feed": "http://feeds.ricostruzionetrasparente.it/albi_pretori/Cessapalombo_feed.xml",
-   "scraper": "https://github.com/RicostruzioneTrasparente/rt-scrapers/blob/develop/providers/Task2.py",
-   "maintainer": "Alessio Cimarelli <alessio.cimarelli@gmail.com> (http://www.ricostruzionetrasparente.it)",
-   "active": 0
+   "feed": "http://www.semplicepa.it/rssfeed/043011.xml",
+   "scraper": "http://www.semplicepa.it/semplice-pa/",
+   "maintainer": "SemplicePA <info@eti3.it> (http://www.semplicepa.it)",
+   "active": 1
  },
  {
    "id": "c_c704_a",
@@ -501,10 +501,10 @@
    "ipa_code": "c_c746",
    "istat_code": 57016,
    "url": "http://cittaducale.trasparenza-valutazione-merito.it/web/trasparenza/albo-pretorio",
-   "feed": "",
-   "scraper": "",
-   "maintainer": "",
-   "active": 0
+   "feed": "http://www.semplicepa.it/rssfeed/057016.xml",
+   "scraper": "http://www.semplicepa.it/semplice-pa/",
+   "maintainer": "SemplicePA <info@eti3.it> (http://www.semplicepa.it)",
+   "active": 1
  },
  {
    "id": "c_c749_a",
@@ -543,7 +543,7 @@
    "feed": "http://www.semplicepa.it/rssfeed/067018.xml",
    "scraper": "http://www.semplicepa.it/semplice-pa/",
    "maintainer": "SemplicePA <info@eti3.it> (http://www.semplicepa.it)",
-   "active": 0
+   "active": 1
  },
  {
    "id": "c_c877_a",
@@ -644,9 +644,9 @@
    "ipa_code": "c_d429",
    "istat_code": 43016,
    "url": "http://www.comune.esanatoglia.mc.it/albo-pretorio/",
-   "feed": "http://feeds.ricostruzionetrasparente.it/albi_pretori/Esanatoglia_feed.xml",
-   "scraper": "https://github.com/RicostruzioneTrasparente/rt-scrapers/blob/develop/providers/Task1.py",
-   "maintainer": "Alessio Cimarelli <alessio.cimarelli@gmail.com> (http://www.ricostruzionetrasparente.it)",
+   "feed": "",
+   "scraper": "",
+   "maintainer": "",
    "active": 0
  },
  {
@@ -813,10 +813,10 @@
    "ipa_code": "c_e343",
    "istat_code": 67026,
    "url": "http://109.239.255.200:8090/EXEC",
-   "feed": "",
-   "scraper": "",
-   "maintainer": "",
-   "active": 0
+   "feed": "http://www.semplicepa.it/rssfeed/067026.xml",
+   "scraper": "http://www.semplicepa.it/semplice-pa/",
+   "maintainer": "SemplicePA <info@eti3.it> (http://www.semplicepa.it)",
+   "active": 1
  },
  {
    "id": "c_e535_a",
@@ -852,10 +852,10 @@
    "ipa_code": "c_e783",
    "istat_code": 43023,
    "url": "http://asp.urbi.it/urbi/progs/urp/ur1ME002.sto?DB_NAME=n1200377&StwEvent=101&OpenTree=1&Archivio=",
-   "feed": "",
-   "scraper": "",
-   "maintainer": "",
-   "active": 0
+   "feed": "http://www.semplicepa.it/rssfeed/043023.xml",
+   "scraper": "http://www.semplicepa.it/semplice-pa/",
+   "maintainer": "SemplicePA <info@eti3.it> (http://www.semplicepa.it)",
+   "active": 1
  },
  {
    "id": "c_e868_a",
@@ -1164,10 +1164,10 @@
    "ipa_code": "c_f690",
    "istat_code": 67028,
    "url": "http://5.97.88.242:8090/EXEC",
-   "feed": "",
-   "scraper": "",
-   "maintainer": "",
-   "active": 0
+   "feed": "http://www.semplicepa.it/rssfeed/067028.xml",
+   "scraper": "http://www.semplicepa.it/semplice-pa/",
+   "maintainer": "SemplicePA <info@eti3.it> (http://www.semplicepa.it)",
+   "active": 1
  },
  {
    "id": "c_F793_a",
@@ -1203,10 +1203,10 @@
    "ipa_code": "c_g005",
    "istat_code": 44054,
    "url": "http://94.90.214.253:8090/EXEC",
-   "feed": "",
-   "scraper": "",
-   "maintainer": "",
-   "active": 0
+   "feed": "http://www.semplicepa.it/rssfeed/044054.xml",
+   "scraper": "http://www.semplicepa.it/semplice-pa/",
+   "maintainer": "SemplicePA <info@eti3.it> (http://www.semplicepa.it)",
+   "active": 1
  },
  {
    "id": "c_g137_a",
@@ -1307,10 +1307,10 @@
    "ipa_code": "c_g690",
    "istat_code": 43039,
    "url": "http://www.comune.pioraco.mc.it/albo-pretorio/",
-   "feed": "http://feeds.ricostruzionetrasparente.it/albi_pretori/Pioraco_feed.xml",
-   "scraper": "https://github.com/RicostruzioneTrasparente/rt-scrapers/blob/develop/providers/Task1.py",
-   "maintainer": "Alessio Cimarelli <alessio.cimarelli@gmail.com> (http://www.ricostruzionetrasparente.it)",
-   "active": 0
+   "feed": "http://www.semplicepa.it/rssfeed/043039.xml",
+   "scraper": "http://www.semplicepa.it/semplice-pa/",
+   "maintainer": "SemplicePA <info@eti3.it> (http://www.semplicepa.it)",
+   "active": 1
  },
  {
    "id": "c_g726_a",
@@ -1323,7 +1323,7 @@
    "feed": "http://www.semplicepa.it/rssfeed/066072.xml",
    "scraper": "http://www.semplicepa.it/semplice-pa/",
    "maintainer": "SemplicePA <info@eti3.it> (http://www.semplicepa.it)",
-   "active": 0
+   "active": 1
  },
  {
    "id": "c_g756_a",
@@ -1450,10 +1450,10 @@
    "ipa_code": "c_h354",
    "istat_code": 57060,
    "url": "http://ww2.gazzettaamministrativa.it/opencms/opencms/_gazzetta_amministrativa/albo_pretorio/_lazio/_comuni/_rivodutri/",
-   "feed": "",
-   "scraper": "",
-   "maintainer": "",
-   "active": 0
+   "feed": "http://www.semplicepa.it/rssfeed/057060.xml",
+   "scraper": "http://www.semplicepa.it/semplice-pa/",
+   "maintainer": "SemplicePA <info@eti3.it> (http://www.semplicepa.it)",
+   "active": 1
  },
  {
    "id": "c_h440_a",
@@ -1671,10 +1671,10 @@
    "ipa_code": "c_i921",
    "istat_code": 54051,
    "url": "http://www.comunespoleto.gov.it/nuovo-albo-pretorio/",
-   "feed": "",
-   "scraper": "",
-   "maintainer": "",
-   "active": 0
+   "feed": "http://www.semplicepa.it/rssfeed/054051.xml",
+   "scraper": "http://www.semplicepa.it/semplice-pa/",
+   "maintainer": "SemplicePA <info@eti3.it> (http://www.semplicepa.it)",
+   "active": 1
  },
  {
    "id": "c_l103_a",
@@ -1700,7 +1700,7 @@
    "feed": "http://www.semplicepa.it/rssfeed/043053.xml",
    "scraper": "http://www.semplicepa.it/semplice-pa/",
    "maintainer": "SemplicePA <info@eti3.it> (http://www.semplicepa.it)",
-   "active": 0
+   "active": 1
  },
  {
    "id": "c_l295_a",
